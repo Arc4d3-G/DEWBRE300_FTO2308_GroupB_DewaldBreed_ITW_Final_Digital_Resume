@@ -59,3 +59,48 @@ hr {
     justify-content: space-evenly;
     padding: 20px;
  }
+
+ /* === ARTICLE styling === */
+
+ .article-container {
+    padding: 0px 20% 0px 20%;
+ }
+ .article-container img {
+    position:relative;
+    right: 20px;
+    top: 15px;
+}
+.experience-head, .education-head {
+   display:flex;
+   align-items: center;
+   column-gap: 20px;
+   padding-top: 20px;
+}
+.experience-content, .education-content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    padding-left: 24px;
+    padding-right: 72px;
+}
+
+.grid-left {
+    grid-column: 1;
+}
+.grid-right {
+    grid-column: 2;
+}
+
+
+/* article border styling */
+ .vl {
+    border-left: 4px solid #3B5472;
+    height: 95%;
+ }
+ .article-container hr {
+    border-top: 4px solid #3B5472;
+    width: 90%;
+ }
+
+ 
