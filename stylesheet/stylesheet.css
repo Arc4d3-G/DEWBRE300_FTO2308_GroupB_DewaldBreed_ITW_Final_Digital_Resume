@@ -62,7 +62,7 @@ hr {
 
 /* === ARTICLE styling === */
 
- .article-container, .skills-and-interests-container {
+ .article-container, .skills-and-interests-container, .footer-container {
     padding: 0px 20% 0px 20%;
  }
  .article-container img {
@@ -125,3 +125,35 @@ hr {
     column-gap: 1rem;
     padding-left: 10%;
 }
+
+/* === CONTACT/FOOTER === */
+
+.footer-container hr {
+    border-top: 4px solid #F5F7EC;
+    width: 90%;
+}
+.contact-head {
+    display:flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-top: 20px;
+  }
+  .contact-head img {
+    position:relative;
+    right: 20px;
+    top: 15px;
+  }
+
+  
+  .contact-content > div{
+    display:flex;
+    column-gap: 10px;
+  }
+  .contact-content img {
+    margin: 24px;
+  }
+  .contact-content {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
