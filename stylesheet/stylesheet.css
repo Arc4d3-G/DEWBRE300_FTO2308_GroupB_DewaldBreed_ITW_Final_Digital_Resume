@@ -32,12 +32,18 @@ h2 {
 h3 {
     font-size: 1.5rem;
 }
+p, li {
+    font-size: 1.2rem;
+}
 a {
     font-size: 1.5rem;
     color:#F5F7EC;
 }
 hr {
     color:#F5F7EC
+}
+label, input, textarea, select, button {
+    font-size: 1.5rem;
 }
 /* === HEADER styling ===*/
 .site-header {
@@ -144,7 +150,7 @@ hr {
     top: 15px;
   }
 
-  
+
   .contact-content > div{
     display:flex;
     column-gap: 10px;
@@ -157,3 +163,32 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+/* === FORM Styling === */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form-container label {
+    display:block;
+    text-align: center;
+    
+}
+.form-container input {
+    width: 500px;
+    height: 1.5rem;
+}
+.form-container select {
+    width: 500px;
+    height: 2rem;
+}
+.form-container textarea {
+    height: 8rem;
+    width: 800px
+}
+.form-container div {
+    margin-bottom: 1rem;
+}
+
