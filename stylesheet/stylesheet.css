@@ -2,11 +2,15 @@
 * {
     font-family: "Cabin";
 }
-
+/* general padding & margins */
 body {
     margin: 0;
 }
-/* div colors*/
+.article-container, .skills-and-interests-container, .footer-container {
+    padding: 2% 20% 2% 20%;
+ }
+
+ /* div colors*/
 .offwhite {
     background-color: #F5F7EC;
     color:#3B5472;
@@ -45,17 +49,21 @@ hr {
 label, input, textarea, select, button {
     font-size: 1.5rem;
 }
+/* image styling */
+.article-container img, .skills-and-interests-container img, .footer-container img {
+    width: 60px;
+    height: 60px;
+}
+.header-image img {
+    max-width: 400px;
+}
 /* === HEADER styling ===*/
 .site-header {
     display: flex;
     align-items: center;
     column-gap: 40px;
     color:#F5F7EC;
-    padding: 5%;
-}
-
-.header-image img {
-    max-width: 400px;
+    padding: 2% 10% 2% 10%;
 }
 
 /* === NAV styling === */
@@ -63,14 +71,15 @@ label, input, textarea, select, button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom:4px solid #F5F7EC;
  }
 
 /* === ARTICLE styling === */
 
- .article-container, .skills-and-interests-container, .footer-container {
-    padding: 0px 20% 0px 20%;
- }
  .article-container img {
     position:relative;
     right: 20px;
@@ -90,7 +99,6 @@ label, input, textarea, select, button {
     padding-left: 24px;
     padding-right: 72px;
  }
-
  .grid-left {
     grid-column: 1;
  }
@@ -149,10 +157,9 @@ label, input, textarea, select, button {
     right: 20px;
     top: 15px;
   }
-
-
   .contact-content > div{
     display:flex;
+    align-items: center;
     column-gap: 10px;
   }
   .contact-content img {
