@@ -182,15 +182,13 @@ hr {
 .vl {
     border-left: 4px solid #3B5472;
 }
-
-
-
+/* ================ MEDIA QUERIES ================ */
 
 /* LAPTOP VIEW */
 @media only screen and (max-width: 1600px)
 {
+    /* contact section */
     .contact-content {
-        /* padding: 5%; */
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
@@ -204,7 +202,7 @@ hr {
 }
 
 /* TABLET VIEW*/
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1350px){
     /* font */
     h1 {
         font-size: 2.5rem;
@@ -224,10 +222,13 @@ hr {
     label, input, textarea, select, button {
         font-size: 1rem;
     }
+    /* misc changes */
     .contact-content {
         padding: 0%;
-        
       }
+      hr {
+        width: 90%;
+     }
     /* images */
     .article-container img, .skills-and-interests-container img, .footer-container img {
         width: 40px;
@@ -258,5 +259,82 @@ hr {
 
 } 
 
-/* MOBILE VIEW */
-/* @media only screen and (max-width: 750px) */
+/* LARGE MOBILE VIEW */
+@media only screen and (max-width: 750px) {
+    /* font */
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p, li {
+        font-size: 0.8rem;
+    }
+    a {
+        font-size: 1rem;
+    }
+    label, input, textarea, select, button {
+        font-size: 1rem;
+    }
+    /* general padding/margins */
+    .article-container, .skills-and-interests-container, .footer-container {
+        padding: 2% 5% 2% 5%;
+     }
+    /* header */
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        column-gap: 40px;
+        padding: 5% 5% 0% 5%;
+    }
+    /* article */
+    .experience-content, .education-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    hr {
+        width: 90%;
+     }
+     /* images */
+    .article-container img, .skills-and-interests-container img, .footer-container img {
+        width: 30px;
+        height: 30px;
+    }
+    /* skills & interests */
+    .skills-content, .interests-content {
+        column-gap: 1rem;
+        padding-left: 0%;
+    }
+    /* contact section */
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+    /* form */
+    .form-container input {
+        width: 200px;
+        height: 1rem;
+    }
+    .form-container select {
+        width: 200px;
+        height: 1.5rem;
+    }
+    .form-container textarea {
+        height: 5rem;
+        width: 250px
+    }
+}
+/* SMALL MOBILE VIEW */
+@media only screen and (max-width: 550px) {
+    hr {
+        width: 85%;
+    }
+}
