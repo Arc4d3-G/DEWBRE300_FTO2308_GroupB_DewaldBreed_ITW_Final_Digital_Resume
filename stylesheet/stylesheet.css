@@ -60,6 +60,8 @@ label, input, textarea, select, button {
     align-items: center;
     column-gap: 40px;
     padding: 2% 10% 2% 10%;
+    background-image: url(/images/hero.jpg);
+    background-size:cover;
 }
 
 /* === NAV styling === */
@@ -171,6 +173,17 @@ label, input, textarea, select, button {
     right: 10px;
     top: 20px;
  }
+
+ /* GitHub Cat Animation */
+ @keyframes gitcat {
+    50% {filter:invert(50%);}
+    100% {transform:rotate(720deg); transform-origin: center;}
+}
+.animated:hover {
+    animation-name: gitcat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 /* Horizontal and vertical line styling */
 hr {
     border-top: 4px solid;
