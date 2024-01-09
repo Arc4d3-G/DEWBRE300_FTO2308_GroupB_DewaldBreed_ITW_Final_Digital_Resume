@@ -30,6 +30,9 @@ body {
     background-color: #11ABB7;
 }
 
+
+
+
 /* Font styling */
 h1 {
     font-size: 5rem;
@@ -53,7 +56,6 @@ label, input, textarea, select, button {
     font-size: 1.5rem;
 }
 
-
 /* === HEADER styling ===*/
 .site-header {
     display: flex;
@@ -75,6 +77,12 @@ label, input, textarea, select, button {
     z-index: 1;
     border-bottom:4px solid #F5F7EC;
  }
+
+ /* === THEME TOGGLE === */
+.theme-button-image {
+    width: 30px;
+    cursor: pointer;
+}
 
 /* === ARTICLE styling === */
 
@@ -193,7 +201,7 @@ hr {
     width: 100%;
  }
 .vl {
-    border-left: 4px solid #3B5472;
+    border-left: 4px solid;
 }
 /* ================ MEDIA QUERIES ================ */
 
@@ -350,4 +358,36 @@ hr {
     hr {
         width: 85%;
     }
+}
+
+/* dark mode */
+.dark-mode-hero {
+    background-image: url(/images/hero-darkmode.jpg);
+}
+.dark-mode-body {
+    background-color: rgb(51, 48, 48);
+}
+.dark-mode-font {
+    color:#F5F7EC;
+}
+.dark-mode-nav {
+    background-color: #945e2c;
+}
+.dark-mode-skills {
+    background-color: #945e2c;
+}
+.dark-mode-footer {
+    background-color: rgb(51, 48, 48);
+}
+.dark-mode-hr {
+    border: 2px solid #945e2c; 
+}
+.dark-mode-vl {
+    border-left: 4px solid #945e2c;
+}
+.dark-mode-pen {
+    content: url(/images/pen-darkmode.png);
+}
+.dark-mode-book {
+    content: url(/images/book-darkmode.png);
 }

@@ -1,6 +1,11 @@
 Digital resume project by Dewald Breed
 Figma link: https://www.figma.com/file/r6Xh8XFyqDh86nZIUeBXHU/ITW_Figma-Resume-DEWBRE300?type=design&node-id=0%3A1&mode=design&t=ZfpDEdwzIg4EecQi-1
+Git Repo Link: https://github.com/Arc4d3-G/DEWBRE300_FTO2308_GroupB_DewaldBreed_ITW_Final_Digital_Resume.git
 
 This project is my first self written and designed website using only HTML & CSS.
 The website is a digital resume for employment purposes.
 It makes use of images, css grids, flexboxes, forms, media queries and more.
+
+09/01/24
+A dark theme toggle has been retroactively added using javascript (see script.js).
+It's still a work in progress, but works well enough as is.
